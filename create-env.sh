@@ -1,6 +1,6 @@
 CONTEXT=camelk
 
-minikube -p $CONTEXT start --cpus=4 --memory=4096
+minikube -p $CONTEXT start --cpus=4 --memory=6000
 minikube -p $CONTEXT addons enable registry
 export REGISTRY_ADDRESS=$(kubectl -n kube-system get service registry -o jsonpath='{.spec.clusterIP}')
 
