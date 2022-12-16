@@ -1,5 +1,6 @@
-## Creating manifest file
 
+# Camel POC
+## Creating manifest file
 ```sh
 kamel init test.java
 ```
